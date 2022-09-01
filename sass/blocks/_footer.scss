@@ -1,0 +1,117 @@
+.site-footer {
+    padding: 49px 0 48px;
+    background-color: #202020;
+}
+
+.site-footer__border {
+    padding-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #D8B152;
+}
+
+.logo-footer {
+    display: inline-block;
+}
+
+.nav__list {
+    list-style-type: none;
+    margin-top: 85px;
+    margin-left: 30px;
+}
+
+.nav__soc {
+    margin-top: 85px;
+}
+
+.nav__item {
+    margin-top: 10px;
+}
+
+.nav__str {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.nav__str--active {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.nav__str--soc {
+    display: block;
+}
+
+.nav__soc {
+    display: block;
+}
+
+.nav__link {
+    position: relative;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.nav__link--before {
+    margin-left: 33px;
+    &::before {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        background-image: url("../../images/tel.svg");
+        background-repeat: no-repeat;
+        left: -32px;
+        content: "";
+    }
+}
+
+.nav__link--after {
+    margin-left: 33px;
+    &::before {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        background-image: url("../../images/mail.svg");
+        background-repeat: no-repeat;
+        left: -32px;
+        content: "";
+    }
+}
+
+.nav__soc__link + .nav__soc__link {
+    margin-left: 10px;
+}
+
+.nav__soc__link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 13px;
+    border: 1px solid #D8B152;
+}
+
+.nav__soc__link--active {
+    background-color: #D8B152;
+}
+
+.site-footer__bottom {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-footer__bottom__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}

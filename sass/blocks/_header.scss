@@ -1,0 +1,38 @@
+.site-header__inner {
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo {
+    display: inline-block;
+    height: 155px;
+}
+
+.logo__img {
+    height: 155px;
+}
+
+.navbar {
+    margin-left: auto;
+    margin-top: 43px;
+}
+
+.navbar__list {
+    list-style-type: none;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__link {
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #424242;
+}
+
+.navbar__link--active {
+    border-bottom: 2px solid #D8B152;
+}
