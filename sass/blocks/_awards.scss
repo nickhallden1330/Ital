@@ -1,0 +1,94 @@
+.awards-hero {
+	padding: 20px 0 140px 0;
+}
+
+.awards-hero__title {
+	margin-bottom: 60px;
+	font-weight: 600;
+	font-size: 46px;
+	line-height: 63px;
+	color: #424242;
+}
+
+.awards-hero__list {
+	list-style-type: none;
+}
+
+.awards-hero__item {
+	width: 100%;
+	max-width: 1160px;
+	padding: 50px 0;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #aea38b;
+
+	&:nth-child(1) {
+		.awards-hero__item-text {
+			margin-bottom: 100px;
+		}
+	}
+
+	&:nth-child(2) {
+		.awards-hero__item-text {
+			margin-bottom: 100px;
+		}
+	}
+
+	&:nth-child(3) {
+		.awards-hero__item-text {
+			margin-bottom: 62px;
+		}
+	}
+
+	&:nth-child(4) {
+		.awards-hero__item-text {
+			margin-bottom: 100px;
+		}
+	}
+
+	&:nth-child(5) {
+		.awards-hero__item-text {
+			margin-bottom: 24px;
+		}
+	}
+
+	&:nth-child(6) {
+		.awards-hero__item-text {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.awards-hero__item-img {
+	display: block;
+	margin-right: 40px;
+}
+
+.awards-hero__item-title {
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 140%;
+	color: #424242;
+}
+
+.awards-hero__item-text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: #424242;
+}
+
+.awards-hero__item-link {
+	display: block;
+	width: 100%;
+	max-width: 260px;
+	padding: 18px;
+	background-color: #d8b152;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	color: #ffffff;
+}
