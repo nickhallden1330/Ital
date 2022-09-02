@@ -604,4 +604,38 @@ main {
   font-size: 18px;
   line-height: 25px;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 910px) {
+  .awards-hero__item {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  .awards-hero__item .awards-hero__item-img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .awards-hero__title {
+    margin-bottom: 40px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .awards-hero__item-img {
+    width: 300px;
+    height: 200px;
+  }
+  .awards-hero__item-title {
+    font-size: 18px;
+  }
+  .awards-hero__item-text {
+    font-size: 14px;
+  }
+  .awards-hero__item-link {
+    width: 100%;
+    max-width: 300px;
+  }
 }/*# sourceMappingURL=main.css.map */
