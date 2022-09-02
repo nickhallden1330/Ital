@@ -1,7 +1,13 @@
-@import "visually-hidden";
-@import "container";
-@import "header";
-@import "footer";
+@import 'visually-hidden';
+@import 'container';
+@import 'header';
+@import 'footer';
 
+// media page styles
+@import 'media';
 
+// awards page styles
+@import 'awards';
 
+// public page styles
+@import 'public';
