@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/main.css" />
-		<title>Медиафайлы</title>
+		<title>Отзывы</title>
 	</head>
 	<body>
 		<!--------------------------------------------------- SITE HEADER BEGINN ---------------------------------------------------------->
@@ -51,32 +51,97 @@
 		<!-- site-main -->
 
 		<main class="site-main">
-			<!-- media-section -->
+			<!-- review-hero-section -->
 
-			<section class="media">
+			<section class="review-hero">
 				<div class="container">
-					<div class="media__inner">
-						<h2 class="media__title">Медиафайлы</h2>
-
-						<ul class="media__list">
-							<li class="media__item">
-								<h3 class="media__item-title">Награды</h3>
-								<a class="media__item-link" href="./awards.html">Посмотреть</a>
+					<div class="review-hero__inner">
+						<h2 class="review-hero__title">Отзывы наших клиентов</h2>
+						<ul class="review-hero__list">
+							<li class="review-hero__item">
+								<img
+									class="review-hero__item-img"
+									src="./images/review1.png"
+									alt="Feedback"
+									width="280"
+									height="189"
+								/>
 							</li>
-							<li class="media__item">
-								<h3 class="media__item-title">Публикации</h3>
-								<a class="media__item-link" href="./public.html">Посмотреть</a>
+							<li class="review-hero__item">
+								<img
+									class="review-hero__item-img"
+									src="./images/review2.png"
+									alt="Feedback"
+									width="560"
+									height="172"
+								/>
 							</li>
-							<li class="media__item">
-								<h3 class="media__item-title">Отзывы</h3>
-								<a class="media__item-link" href="./review.html">Посмотреть</a>
+							<li class="review-hero__item">
+								<img
+									class="review-hero__item-img"
+									src="./images/review3.png"
+									alt="Feedback"
+									width="280"
+									height="130"
+								/>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
 
-			<!-- /media-section -->
+			<!-- /review-hero-section -->
+
+			<!-- formes-section -->
+
+			<section class="formes">
+				<div class="container">
+					<div class="formes__inner">
+						<h2 class="formes__title">Заказывали проект у нас?</h2>
+						<p class="formes__text">
+							Оставьте ваш отзыв в форме ниже и мы его опубликуем на нашем сайте
+						</p>
+
+						<form
+							class="formes__form"
+							action="https://echo.htmlacademy.ru/"
+							method="post"
+							autocomplete="off"
+						>
+							<div class="formes__inputes">
+								<input
+									class="formes__inp"
+									name="user_name"
+									aria-label="Enter your name"
+									placeholder="Ваше имя"
+									type="text"
+									required
+								/>
+								<input
+									class="formes__inp"
+									type="number"
+									name="user_phone_number"
+									aria-label="Enter your phone number"
+									placeholder="Номер телефона"
+									required
+								/>
+
+								<button class="formes__btn" type="submit">Отправить</button>
+							</div>
+
+							<textarea
+								class="formes__tarea"
+								name="user_commit"
+								placeholder="Ваш отзыв"
+								cols="30"
+								rows="10"
+							></textarea>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<!-- /formes-section -->
 		</main>
 
 		<!-- /site-main -->
