@@ -1,0 +1,79 @@
+.bg-img {
+	background-image: url('../images/hero-bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 800px;
+	background-position: center;
+}
+
+.hero__inner {
+	padding-bottom: 500px;
+}
+
+.hero__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 334px;
+}
+
+.hero__title-wrapper {
+	width: 100%;
+	max-width: 860px;
+}
+
+.hero__title {
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 140%;
+	color: #ffffff;
+}
+
+.hero__content {
+	width: 100%;
+	max-width: 260px;
+}
+
+.hero__text {
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.hero__link {
+	display: block;
+	width: 100%;
+	padding: 18px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #d8b152;
+}
+
+.hero__bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero__circle--active {
+	background-color: #ffffff;
+}
+
+.hero__circle {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+}
+
+.hero__circle + .hero__circle {
+	margin-left: 20px;
+}

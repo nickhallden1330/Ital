@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="./css/main.css" />
 		<title>Nick Hallden</title>
 	</head>
-	<body>
+	<body class="bg-img">
 		<!--------------------------------------------------- SITE HEADER BEGINN ---------------------------------------------------------->
 		<header class="site-header">
 			<div class="container">
@@ -15,7 +15,7 @@
 					<a class="logo" href="./index.html">
 						<img
 							class="logo__img"
-							src="./images/logo.svg"
+							src="./images/logo__footer.svg"
 							alt="Site Logo"
 							width="200"
 							height="200"
@@ -24,26 +24,71 @@
 					<nav class="navbar">
 						<ol class="navbar__list">
 							<li class="navbar__item">
-								<a class="navbar__link navbar__link--active" href="#link"
+								<a
+									class="navbar__link navbar__index-link navbar__link--active"
+									href="#link"
 									>Наши проекты</a
 								>
 							</li>
 							<li class="navbar__item">
-								<a class="navbar__link" href="./media.html">Медиа</a>
+								<a class="navbar__link navbar__index-link" href="./media.html"
+									>Медиа</a
+								>
 							</li>
 							<li class="navbar__item">
-								<a class="navbar__link" href="#link">О нас</a>
+								<a class="navbar__link navbar__index-link" href="#link"
+									>О нас</a
+								>
 							</li>
 							<li class="navbar__item">
-								<a class="navbar__link" href="#link">Контакты</a>
+								<a class="navbar__link navbar__index-link" href="#link"
+									>Контакты</a
+								>
 							</li>
 						</ol>
 					</nav>
+					<button class="burger">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</button>
 				</div>
 			</div>
 		</header>
 		<!--------------------------------------------------- SITE HEADER END ------------------------------------------------------------->
-
+		<!-- site-main -->
+		<main class="site-main">
+			<!-- hero-section -->
+			<section class="hero">
+				<div class="container">
+					<div class="hero__inner">
+						<div class="hero__top">
+							<div class="hero__title-wrapper">
+								<h1 class="hero__title">
+									Проектирование элитной недвижимости «под ключ»
+								</h1>
+							</div>
+							<div class="hero__content">
+								<p class="hero__text">
+									Запишитесь на бесплатную онлайн консультацию
+								</p>
+								<a class="hero__link" href="#">Записаться</a>
+							</div>
+						</div>
+						<div class="hero__bottom">
+							<span class="hero__circle hero__circle--active"></span>
+							<span class="hero__circle"></span>
+							<span class="hero__circle"></span>
+							<span class="hero__circle"></span>
+							<span class="hero__circle"></span>
+							<span class="hero__circle"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /hero-section -->
+		</main>
+		<!-- /site-main -->
 		<!--------------------------------------------------- FOOTER BEGINN -------------------------------------------------------------->
 		<footer class="site-footer">
 			<div class="container">
@@ -59,7 +104,7 @@
 							/>
 						</a>
 						<nav class="nav">
-							<ol class="nav__list">
+							<ol class="nav__list nav__list--active">
 								<li class="nav__item">
 									<strong class="nav__str">Информация</strong>
 								</li>
@@ -152,5 +197,7 @@
 			</div>
 		</footer>
 		<!--------------------------------------------------- FOOTER END ------------------------------------------------------------------>
+
+		<script src="./js/main.js"></script>
 	</body>
 </html>
