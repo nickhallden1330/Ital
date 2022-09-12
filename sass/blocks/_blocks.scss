@@ -1,6 +1,9 @@
 @import 'visually-hidden';
 @import 'container';
 @import 'header';
+@import 'hero';
+@import 'services';
+@import 'join';
 @import 'footer';
 
 // project page style
@@ -15,3 +18,7 @@
 
 // public page styles
 @import 'public';
+
+// review page styles
+@import 'review-hero';
+@import 'formes';

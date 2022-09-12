@@ -1,0 +1,136 @@
+.bg-img {
+	background-image: url('../images/hero-bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 800px;
+	background-position: cover;
+}
+
+.hero__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 394px;
+}
+
+.hero__title-wrapper {
+	width: 100%;
+	max-width: 860px;
+}
+
+.hero__title {
+	margin: 0;
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 140%;
+	color: #ffffff;
+}
+
+.hero__content {
+	width: 100%;
+	max-width: 260px;
+}
+
+.hero__text {
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.hero__link {
+	display: block;
+	width: 100%;
+	padding: 18px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #d8b152;
+}
+
+.hero__bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 75px;
+}
+
+.hero__circle--active {
+	background-color: #ffffff;
+}
+
+.hero__circle {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+}
+
+.hero__circle + .hero__circle {
+	margin-left: 20px;
+}
+
+@media only screen and(max-width: 1080px) {
+	.hero__top {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 374px;
+	}
+
+	.hero__title-wrapper {
+		width: 100%;
+		max-width: 860px;
+		min-width: 313px;
+		margin-bottom: 27px;
+	}
+
+	.hero__title {
+		font-size: 25px;
+	}
+
+	.hero__content {
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.hero__text {
+		font-size: 16px;
+		line-height: 22px;
+		text-align: start;
+	}
+
+	.hero__link {
+		width: 300px;
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	.hero__bottom {
+		margin-bottom: 70px;
+	}
+}
+
+@media only screen and(max-width: 430px) {
+	.hero__top {
+		margin-bottom: 374px;
+	}
+
+	.hero__bottom {
+		margin-bottom: 45px;
+	}
+
+	.hero__circle {
+		width: 12px;
+		height: 12px;
+	}
+
+	.hero__circle + .hero__circle {
+		margin-left: 10px;
+	}
+}

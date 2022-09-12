@@ -1,38 +1,126 @@
 .site-header__inner {
-    display: flex;
-    align-items: flex-start;
+	display: flex;
+	align-items: flex-start;
 }
 
 .logo {
-    display: inline-block;
-    height: 155px;
+	display: inline-block;
+	height: 155px;
 }
 
 .logo__img {
-    height: 155px;
+	height: 155px;
 }
 
 .navbar {
-    margin-left: auto;
-    margin-top: 43px;
+	margin-left: auto;
+	margin-top: 43px;
 }
 
 .navbar__list {
-    list-style-type: none;
-    gap: 50px;
-    display: flex;
-    align-items: center;
+	list-style-type: none;
+	gap: 50px;
+	display: flex;
+	align-items: center;
 }
 
 .navbar__link {
-    padding-bottom: 5px;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #424242;
+	padding-bottom: 5px;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #424242;
+}
+
+.navbar__index-link {
+	color: #ffffff;
 }
 
 .navbar__link--active {
-    border-bottom: 2px solid #D8B152;
+	border-bottom: 2px solid #d8b152;
+}
+
+.burger {
+	position: relative;
+	z-index: 5;
+	display: none;
+	margin-top: 43px;
+	margin-left: auto;
+	width: 60px;
+	height: 18px;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+
+	.line {
+		position: absolute;
+		top: calc(50% - 1px);
+		right: 0;
+		width: 44px;
+		height: 2px;
+		background-color: #d8b152;
+
+		&:first-child {
+			top: 0;
+			width: 60px;
+			transition: all 0.3s ease;
+		}
+
+		&:last-child {
+			top: auto;
+			bottom: 0;
+			width: 60px;
+			transition: all 0.3s ease;
+		}
+	}
+}
+
+@media only screen and(max-width: 725px) {
+	.navbar {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: none;
+		width: 80%;
+		height: 100vh;
+		margin-top: 0;
+		background-color: rgba(#000000, 0.8);
+
+		.navbar__list {
+			flex-direction: column;
+			align-items: center;
+			margin-top: 100px;
+		}
+
+		.navbar__link {
+			color: #fff;
+		}
+	}
+
+	.menu {
+		display: block;
+
+		& ~ .burger {
+			& > .line {
+				transform: scale(0);
+
+				&:first-child {
+					transform: rotate(45deg);
+					top: calc(50% - 1px);
+					transition: all 0.3s ease;
+				}
+
+				&:last-child {
+					transform: rotate(-45deg);
+					bottom: calc(50% - 1px);
+					transition: all 0.3s ease;
+				}
+			}
+		}
+	}
+
+	.burger {
+		display: block;
+	}
 }
